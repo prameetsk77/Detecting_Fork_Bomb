@@ -1,0 +1,16 @@
+Changes made:
+We added semaphore for synchronization in fork.c of kernel.
+
+
+How to make and run module:
+1- Replace fork.c with new fork.c in linux-*/kernel
+2- Build kernel using make and make install.
+3- Reboot the system to reflect the changes.
+4- Make and install the kernel module 'P2_try_4'
+
+How to set threshold:
+By default the threshold to detect a fork bomb is 10 tasks.
+But it is configurable. The threshold value can be passed as a paremeter to the module when doing insmod. (No need to make module again)
+e.g. to set threshold to 50 do this
+insmod P2_try_4.ko 50
+ 
