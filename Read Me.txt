@@ -1,5 +1,6 @@
 Changes made:
-We added semaphore for synchronization in fork.c of kernel.
+A added semaphore  added in fork.c.
+The kernel has to be recompiled with this updated fork.c
 
 
 How to make and run module:
